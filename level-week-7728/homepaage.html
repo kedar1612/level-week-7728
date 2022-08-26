@@ -4,32 +4,617 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="footer.html"> -->
+   
     <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <style>
+            /* footer */
+#help-section {
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 400px;
+            column-gap: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+            background-color: orangered;
+        }
+
+        hr {
+            width: 20%;
+            height: 1px;
+            margin: auto;
+            background-color:black;
+            margin-top: 15px;
+        }
+
+        #help-section>div>a {
+            text-decoration: none;
+            background-color:orangered;
+        }
+
+        #help-section>div>a>p {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        #newsletter {
+            background-color:orangered;
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 25%;
+        }
+
+        #email-input {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #connect {
+            width: 72%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #connect>div:first-child {
+            width: 38%;
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 15px;
+        }
+
+        #connect>div:last-child {
+            width: 37%;
+            display: flex;
+            font-size: 15px;
+        }
+
+        #connect>div>a {
+            text-decoration: none;
+        }
+
+        #download {
+            margin-left: 20px;
+        }
+
+        #hr-bottom {
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+
+        #bottom-last {
+
+            width: 100%;
+            height: 120px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        #bottom-last>a:first-child>p {
+            color:white;
+            padding-top: 3%;
+            padding-bottom: 1%;
+        }
+
+        #bottom-last>a:last-child>p {
+            color: grey;
+        }
+
+        #bottom-last>a {
+            text-decoration: none;
+        }
+
+          /* fotter style end */
+
+
+      /* navbar style */
+      #navbar{
+ 
+ height: 120px;
+ width: 100%;
+ background-color: #4f46e5;
+ }
+ a{
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+     font-weight: bold;
+ }  
+.section{
+     display: flex;
+     justify-content: space-around;
+ }
+
+.section2{
+
+ height: 50%;
+ display: flex;
+ justify-content: space-around   ;
+ align-items: center;
+ padding-left: 11%;
+ padding-right: 11%;
+}
+
+.search-container button{
+
+background-color: white;
+border: none;
+
+cursor: pointer;
+}
+.search-container>a{
+margin-left: 50px;
+font-size: 25px;
+
+}
+i{
+ font-size: 20px;
+}
+.section2>div>a{
+ padding: 10px;
+ 
+
+}
+.section2>div:first-child>a:hover{
+ background-color: #f2f2f6;
+}
+.login>a{
+ margin-left: 30px;
+}
+h1{
+ color:
+ #4f46e5 ;
+}
+.page>select{
+ border: none;
+ text-align: center;
+ cursor: pointer;
+}
+.last_bar>a{
+ color:white;
+ height: 29px;
+ justify-content: space-evenly;
+ margin-left: 25px;
+ font-weight: lighter;
+ font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.last_bar>a:hover{
+ color: #76767b;
+}
+.last_bar{
+ background-color:#4f46e5;
+ text-align: center;
+ align-items: center;
+ padding: 10px;
+}
+img{
+ width: 100px;
+ padding-bottom: 20px;
+}
+.login>button{
+border: none;
+margin-left: 13px;
+
+}
+.login>button:hover{
+background-color: #e6e6f7;
+cursor: pointer;
+}
+      /* homepage style */
         *{
             margin: 0px;
             padding: 0px;
         }
+        #box1{
+          width: 90%;
+          height:auto;
+          /* border: 1px solid red; */
+          margin-top: 20px;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          gap: 5px;
+        }
+        #box1>div{
+          /* border: 1px solid black; */
+        }
+        #box1>div>img{
+          width: 95%;
+        }
+        #box1>div>h4{
+          font-size: 15px;
+          color:#444444;
+          padding: 10px;
+        }
+        #box1>div>p{
+          font-size: 12px;
+          padding: 10px;
+          color: #999999;
+        }
+        #box2{
+          width: 90%;
+          height: 350px;
+          /* border: 1px solid red; */
+          margin: auto;
+          margin-top: 30px;
+        }
+        .inside{
+        display:flex;
+        margin-left: 60px;
+        }
+        .inside>h2{
+          margin-right: 20px;
+        }
+        .inside>button{
+          border: 0px;
+          color: aqua;
+        }
+        #box3{
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap:20px;
+          margin: auto; 
+          margin-top: 40px;      
+        }
+        #box3>div>img{
+          width:90%;
+        }
+        #box3>div>h5{
+          width: 100%;
+          height: 60px;
+          font-size: 13px;
+          color: #999999;
+        }
+      
+        .inside2{
+          display:flex;
+        margin-left: 60px;
+        } 
+        .inside2>h2{
+          margin-right: 20px;
+        } 
+        .inside2>button{
+          border: 0px;
+          color: aqua;
+        }  
+        #box4{
+          width: 90%;
+          height: 350px;
+          /* border: 1px solid red; */
+          margin: auto;
+          margin-top: 30px; 
+        }
+        .box4{
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap:20px;
+          margin: auto; 
+          margin-top: 40px; 
+        }
+        .box4>div>img{
+          width:90%; 
+        }
+        .box4>div>h5{
+          width: 100%;
+          height: 60px;
+          font-size: 13px;
+          color: #999999;
+        }
+        #box5{
+          width: 95%;
+          height: 200px;
+          /* border: 1px solid red; */
+          margin: auto;
+          margin-top: 30px;
+        }
+        #box5>img{
+          width: 100%;
+        }
     </style>
 </head>
 <body>
-   <div>
-      <h1></h1>
+        <!-- navbar -->
+        <div id="navbar">
+          <div class="section">
+             <div class="page">
+                 <select name="India" id="select">
+                     <option value="india">India</option>
+                     <option value="Albenia">Albenia</option>
+                     <option value="Aergentina">Aergentina</option>
+                     <option value="Australia">Australia</option>
+                     <option value="Colabmia">Colabmia</option>
+                     <option value="Egypt">Egypt</option>
+                 </select>
+                 <a href="customercare">Support Center</a>
+     
+             </div>
+              <div class="login" >
+               <a href="register.html">Register & Login</a>
+              </div>
+          
+          </div>
+          <div class="section2">
+             <div>
+              <a href="New.html">New</a>
+              <a href="best.html">Bestselling</a>
+              <a href="brand.html">brand</a>
+              <a href="clear.html">clearanes</a>
+             </div>
+             <a href="homepage.html"><img src="data:image/png;base64,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" alt=""></a>
+             <div class="search-container">
+                  <a href="search"><i class="fa fa-search"></i></a>
+                  <a href="wishlist"><i class="fa fa-heart-o"></i></a>
+                  <a href="bag"><i class="fa fa-shopping-bag"></i></a>
+     
+               </div>
+           
+          
+          </div>
+          <div class="last_bar">
+             <a href="new_arrivals">New</a>
+             <a href="">Bestselling</a>
+             <a href="">Barnd</a>
+             <a href="">clearanes</a>
+             <a href="">Deals</a>
+             <a href="">Cupon</a>
+             <a href="">App Only</a>
+          </div>
+          
+         
+     
+         </div>
+          <!-- HomePage -->
+  <h1>Trending Categories</h1>
+   <div id="box1">
+   
       <div>
         <img src="https://img.gkbcdn.com/bn/2205/488x2743-628f62882b40c91f8cd36998._p1_.jpg" alt="trend1">
-        <h2>Smart Home & Garden</h2>
+        <h4>Smart Home & Garden</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, atque. Provident, error laboriosam! Dicta, cumque.</p>
       </div>
       <div>
         <img src="https://img.gkbcdn.com/bn/2205/488x274-628f63522b40c91f8cd3699a._p1_.jpg" alt="trnd2">
-        <h2>E-transport</h2>
+        <h4>E-transport</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit explicabo ut optio soluta doloremque? Consequuntur.</p>
       </div>
       <div>
         <img src="https://img.gkbcdn.com/bn/2205/3d488x274-62958bbe2b40c9241c538d77._p1_.jpg" alt="trned3">
-        <h2>3D Printers</h2>
+        <h4>3D Printers</h4>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, ratione quis. Ut voluptatibus qui aperiam?</p>
       </div>
    </div> 
+   <div id="box2">
+    <div class="inside">
+      <h2>Ner For You</h2>
+      <button>See More</button>
+    </div>
+    <div id="box3">
+      <div>
+        <img src="https://img.gkbcdn.com/bn/2207/276-62c812d72b40c929e83fbc42._p1_.jpg" alt="">
+      </div>
+      <div>
+        <img src="https://img.gkbcdn.com/p/2022-08-08/Lenovo-B002-Electric-Toothbrush-USB-Charging-Black-512923-0._w280_p1_.jpg" alt="">
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis accusamus in dolor aliquid tenetur!</h5>
+        <p>2055.07</p>
+      </div>
+      <div>
+        <img src="https://img.gkbcdn.com/p/2022-08-11/Personalized-Bone-Shaped-Funny-Pet-ID-Tag-Black-513811-0._w280_p1_.jpg" alt="">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in at doloremque excepturi enim.</h5>
+        <p>657.06</p>
+      </div>
+      <div>
+        <img src="https://img.gkbcdn.com/p/2022-08-18/HTC-GT-266-Men-Rechargeable-Electric-Shaver-514565-0._w280_p1_.jpg" alt="">
+        <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos molestiae in voluptatum ad modi.</h5>
+        <p>2466.24</p>
+      </div>
+    </div>
+   </div>
+   <div id="box4">
+    <div class="inside2">
+      <h2>Best Sellers</h2>
+      <button>see more</button>
+    </div>
+    <div class="box4">   
+    <div>
+      <img src="https://img.gkbcdn.com/p/2020-01-07/Xiaomi-Mijia-LCD-Writing-Tablet-10-Inch-With-Pen-White-895504-._w280_p1_.jpg" alt="">
+      <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim necessitatibus incidunt voluptatem!</h5>
+      <p>1808.36</p>
+    </div>
+    <div>
+      <img src="https://img.gkbcdn.com/p/2019-09-27/tronsmart-element-t6-mini-bluetooth-5-0-speaker---black-1571994046957._w280_p1_.jpg" alt="">
+      <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nostrum quod illum?</h5>
+      <p>2055.07</p>
+    </div>
+    <div>
+      <img src="https://img.gkbcdn.com/p/2020-05-09/Razer-Viper-Mini-RGB-Gaming-Mouse-61G-Ultra-Light-Black-903961-._w280_p1_.jpg" alt="">
+      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ad? Hic dignissimos eius quidem.</h5>
+      <p>3124.13</p>
+    </div>
+    <div>
+      <img src="https://img.gkbcdn.com/p/2021-12-23/gamesir-vx-aimbox-multi-platform-console-adapter-9ff141-1640225803342._w280_p1_.jpg" alt="">
+      <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque explicabo a aut nobis doloribus.</h5>
+      <p>3699.78</p>
+    </div>
+  </div>
+   
+   </div>
+   <div id="box5">
+    <h1> POPULAR BRAND</h1>
+    <img src="https://img.gkbcdn.com/bn/2205/1500x2603-628f67f02b40c91f8ca376fa._p1_.jpg" alt="">
+
+   </div>
+<!-- 
+   <footer></footer> -->
+   
+   <div id="help-section">
+    <div>
+        <h3>NEW TO GEEKBUY</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div>
+        <h3>HELP</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div id="newsletter">
+        <h3>GEEKBUY NEWS</h3>
+        <a href="">
+            <p>Sign up for the newsletter
+                and discover the latest arrivals and promotions</p>
+        </a>
+        <input type="email" placeholder="INSERT YOUR E-MAIL ADDRESS" id="email-input">
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div>
+        <h3>GEEKBUY</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+    <div>
+        <h3>ABOUT US</h3>
+        <hr>
+        <a href="">
+            <p>Shipping times & costs</p>
+        </a>
+        <a href="">
+            <p>Payments and web security</p>
+        </a>
+        <a href="">
+            <p>Product quality</p>
+        </a>
+        <a href="">
+            <p>Track your order</p>
+        </a>
+        <a href="">
+            <p>Returns & refunds</p>
+        </a>
+        <a href="">
+            <p>FAQs</p>
+        </a>
+        <a href="">
+            <p>Size Guide</p>
+        </a>
+    </div>
+</div>
+<hr id="hr-bottom">
+
+<div id="connect">
+    <div>
+        <p>CONNECT WITH US</p>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-twitter"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-youtube"></i></a>
+        <a href=""><i class="bi bi-pinterest"></i></a>
+        <a href=""><i class="bi bi-tiktok"></i></a>
+
+    </div>
+    <div>
+        <a href=""><i class="bi bi-tablet"></i></i></a>
+        <a href="">
+            <p id="download">DOWNLOAD THE APP FOR iOS / ANDROID</p>
+        </a>
+    </div>
+</div>
+<div id="bottom-last">
+    <a href="">
+        <p>Powered by GEEKBUY NET-A-PORTER GROUP - COPYRIGHT <span>&copy</span> 2000-2022 GEEKBUY NET-A-PORTER GROUP
+            S.P.A - ALL RIGHTS RESERVERD - SIAE LICENCE # 401/1/526</p>
+    </a>
+    <a href="">
+        <p>LEGAL AREA / PRIVACY POLICY</p>
+    </a>
+</div>
+</div>
+  
 </body>
 </html>

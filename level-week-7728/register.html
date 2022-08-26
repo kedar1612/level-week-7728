@@ -371,10 +371,10 @@ input {
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or with your email</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button class="btn">Register</button>
+                <input id="name" type="text" placeholder="Name" />
+                <input id="email" type="email" placeholder="Email" />
+                <input id="pass" type="password" placeholder="Password" />
+                <button ondblclick="register" class="btn">Register</button>
             </form>
         </div>
         <div class="form-container log-in-container">
@@ -402,7 +402,7 @@ input {
                 <div class="slide-panel slide-right">
                     <h1>Hello, Friend!</h1>
                     <p>Enter your personal details</p>
-                    <button class="abc" id="signUp">Register</button>
+                    <button  class="abc" id="signUp">Register</button>
                 </div>
             </div>
         </div>
@@ -423,9 +423,10 @@ input {
         container.classList.remove("right-panel-active");
     });
 
-    document.querySelector("form").addEventListener("submit",userData);
+    document.querySelector("form").addEventListener("register");
     function userData (){
-
+      let nameData = document.querySelector("#name").value;
+      console.log(nameData);
     }
     </script>
 </body>
