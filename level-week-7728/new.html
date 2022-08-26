@@ -5,311 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Register</title>
+    <title>New</title>
+
     <style>
-           /* * {
-	box-sizing: border-box;
-} */
-
-body {
-	background: #f6f5f7;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: auto;
-	margin: -20px 0 50px;
-
-}
-
-h1 {
-	font-weight: bold;
-	margin: 0;
-}
-
-h2 {
-	text-align: center;
-}
-
-p {
-	font-size: 14px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
-}
-
-span {
-	font-size: 12px;
-}
-
-a {
-	color: #333;
-	font-size: 14px;
-	text-decoration: none;
-	margin: 15px 0;
-}
-
-button {
-	border-radius: 20px;
-	border: 1px solid #e72fff;
-	background-color: #ff2bed;
-	color: #FFFFFF;
-	font-size: 12px;
-	font-weight: bold;
-	padding: 12px 45px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
-}
-
-button:active {
-	transform: scale(0.95);
-}
-
-button:focus {
-	outline: none;
-}
-
- button.abc {
-	background-color: transparent;
-	border-color: #FFFFFF;
-} 
-
-form {
-	background-color: #FFFFFF;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 50px;
-	height: 100%;
-	text-align: center;
-}
-
-input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
-}
-
-.container {
-	background-color: #fff;
-	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	position: relative;
-	overflow: hidden;
-	width: 768px;
-	max-width: 100%;
-	min-height: 480px;
-}
-
-.form-container {
-	position: absolute;
-	top: 0;
-	height: 100%;
-}
-
-.log-in-container {
-	left: 0;
-	width: 50%;
-	z-index: 2;
-}
-
-.container.right-panel-active .sign-in-container {
-	transform: translateX(100%);
-}
-
-.register-container {
-	left: 0;
-	width: 50%;
-	opacity: 0;
-	z-index: 1;
-}
-
-.container.right-panel-active .register-container {
-	transform: translateX(100%);
-	opacity: 1;
-	z-index: 5;
-	animation: show 0.6s;
-}
-
-
-.slider {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	transition: transform 0.6s ease-in-out;
-	z-index: 100;
-}
-
-.container.right-panel-active .slider{
-	transform: translateX(-100%);
-}
-
-.slide {
-	background: linear-gradient(to right, #ff2bf4, #8a41ff);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 0 0;
-	color: #FFFFFF;
-	position: relative;
-	left: -100%;
-	height: 100%;
-	width: 200%;
-  	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
-}
-
-.container.right-panel-active .slide{
-  	transform: translateX(50%);
-}
-
-.slide-panel {
-	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding: 0 40px;
-	text-align: center;
-	top: 0;
-	height: 100%;
-	width: 50%;
-	transform: translateX(0);
-	transition: transform 0.6s ease-in-out;
-}
-
-.container.right-panel-active .slide-left {
-	transform: translateX(0);
-}
-
-.slide-right {
-	right: 0;
-	transform: translateX(0);
-}
-
-.social-media {
-	margin: 20px 0;
-}
-
-.social-media a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
-
-        /* navbar */
-         *{
-            margin: 0px;
-            padding: 0px;
-        }
-        #navbar{
+            
+            /* navbar */
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #navbar{
  
-        height: 120px;
-        width: 100%;
-        background-color: #4f46e5;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 12px;
-            font-weight: bold;
-        }  
-      .section{
-            display: flex;
-            justify-content: space-around;
-        }
-   
-      .section2{
+ height: 120px;
+ width: 100%;
+ position: fixed;
+ background-color: #4f46e5;
+ }
+ a{
+     text-decoration: none;
+     color: white;
+     font-size: 12px;
+     font-weight: bold;
+ }  
+.section{
+     display: flex;
+     justify-content: space-around;
+ }
+
+.section2{
+
+ height: 50%;
+ display: flex;
+ justify-content: space-around   ;
+ align-items: center;
+ padding-left: 11%;
+ padding-right: 11%;
+}
+
+.search-container button{
+
+background-color: white;
+border: none;
+
+cursor: pointer;
+}
+.search-container>a{
+margin-left: 50px;
+font-size: 25px;
+
+}
+i{
+ font-size: 20px;
+}
+.section2>div>a{
+ padding: 10px;
  
-        height: 50%;
-        display: flex;
-        justify-content: space-around   ;
-        align-items: center;
-        padding-left: 11%;
-        padding-right: 11%;
-      }
-  
-      .search-container button{
-       
-     background-color: white;
-     border: none;
- 
-     cursor: pointer;
-     }
-     .search-container>a{
-      margin-left: 50px;
-      font-size: 25px;
-      
-     }
-      i{
-        font-size: 20px;
-      }
-      .section2>div>a{
-        padding: 10px;
-        
-      
-      }
-      .section2>div:first-child>a:hover{
-        background-color: green;
-      }
-      .login>a{
-        margin-left: 30px;
-      }
-      h1{
-        color:
-        #4f46e5 ;
-      }
-      .page>select{
-        border: none;
-        text-align: center;
-        cursor: pointer;
-      }
-      .last_bar>a{
-        color:white;
-        height: 29px;
-        justify-content: space-evenly;
-        margin-left: 25px;
-        font-weight: lighter;
-        font-family:Verdana, Geneva, Tahoma, sans-serif ;
-      }
-      .last_bar>a:hover{
-        color: #76767b;
-      }
-      .last_bar{
-        background-color:#4f46e5;
-        text-align: center;
-        align-items: center;
-        padding: 10px;
-      }
-     img{
-        width: 100px;
-        padding-bottom: 20px;
-     }
-     .login>button{
-      border: none;
-     margin-left: 13px;
-   
-     }
-     .login>button:hover{
-      background-color: #e6e6f7;
-      cursor: pointer;
-     }
+
+}
+.section2>div:first-child>a:hover{
+ background-color: #f2f2f6;
+}
+.login>a{
+ margin-left: 30px;
+}
+h1{
+ color:
+ #4f46e5 ;
+}
+.page>select{
+ border: none;
+ text-align: center;
+ cursor: pointer;
+}
+.last_bar>a{
+ color:white;
+ height: 29px;
+ justify-content: space-evenly;
+ margin-left: 25px;
+ font-weight: lighter;
+ font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.last_bar>a:hover{
+ color: #76767b;
+}
+.last_bar{
+ background-color:#4f46e5;
+ text-align: center;
+ align-items: center;
+ padding: 10px;
+}
+img{
+ width: 100px;
+ padding-bottom: 20px;
+}
+.login>button{
+border: none;
+margin-left: 13px;
+
+}
+.login>button:hover{
+background-color: #e6e6f7;
+cursor: pointer;
+}
+           /* navbarstyleend */
+
+        #newBox1{
+            
+            width: 75%;
+            height: auto;
+            display:grid ;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,320px);
+            gap: 10px;
+            /* border: 1px solid red; */
+            margin: auto;
+    
+        }
+        #newBox1>div{
+            /* border: 1px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 180px;
+        }
+        #newBox1>div>img{
+            width: 100%;
+        }
+        #newBox1>div>p{
+            padding: 2px;
+        }
+        #newBox1>div>h5{
+            padding: 3px;
+        }
     </style>
 </head>
 <body>
-    <!-- navbar -->
+    <!-- navbarhtmlstart -->
     <div id="navbar">
         <div class="section">
            <div class="page">
@@ -325,8 +154,7 @@ input {
    
            </div>
             <div class="login" >
-             <a href="register.html">Register</a>
-               <a href="sing up"> sing up</a> 
+             <a href="register.html">Register & Login</a>
             </div>
         
         </div>
@@ -360,76 +188,93 @@ input {
        
    
        </div>
-   
-    <!-- regste -->
-    <h2>Register Page</h2>
-    <div class="container" id="container">
-        <div class="form-container register-container">
-            <form action="#">
-                <h4>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</h4>
-                <div class="social-media">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or with your email</span>
-                <input id="name" type="text" placeholder="Name" />
-                <input id="email" type="email" placeholder="Email" />
-                <input id="pass" type="password" placeholder="Password" />
-                <button ondblclick="register" class="btn">Register</button>
-            </form>
-        </div>
-        <div class="form-container log-in-container">
-            <form action="#">
-                <h1>Sign in</h1>
-                <div class="social-media">
-                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button class="btn2">Log In</button>
-            </form>
-        </div>
-        <div class="slider">
-            <div class="slide">
-                <div class="slide-panel slide-left">
-                    <h1>Welcome Back!</h1>
-                    <p>It’s great to see you again.<s/p>
-                    <button class="abc" id="signIn">Log In</button>
-                </div>
-                <div class="slide-panel slide-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details</p>
-                    <button  class="abc" id="signUp">Register</button>
-                </div>
-            </div>
-        </div>
+       <!-- navbarhtmlend -->
+    <div id="newBox1">
+     <div>
+         <img src="https://img.gkbcdn.com/p/2022-08-10/Sopend-E11-Vertical-Tower-Power-Strip-Socket-with-EU-Plug-White-513538-0._w280_p1_.jpg" alt="">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+         <h5>3288.60</h5>
+     </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-08/Lenovo-B002-Electric-Toothbrush-USB-Charging-Black-512923-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>2055.07</h5>
     </div>
-    </body>
-    </html>
-    <script>
-       
-        const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
-    
-    signUpButton.addEventListener('click', () => {
-        container.classList.add("right-panel-active");
-    });
-    
-    signInButton.addEventListener('click', () => {
-        container.classList.remove("right-panel-active");
-    });
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/Personalized-Bone-Shaped-Funny-Pet-ID-Tag-Black-513811-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>657.06</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-10/JJRC-H107-4K-WiFi-FPV-Mini-RC-Drone-2-Batteries-White-513523-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>2959.66</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-09/LDNIO-SC3604-Power-Strip-Socket-with-3-pin-US-Plug-513293-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>1808.36</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-10/Ugreen-HDMI-Switch-3-in-1-Out-4K-HDMI-Switcher-513505-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>2137.30</h5>
+    </div>
+     <div>
+        <img src="https://img.gkbcdn.com/p/2022-08-08/Lenovo-TS13-Desktop-Speaker-Alarm-Clock-White-512924-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>1972.83</h5>
+     </div>
+     <div>
+        <img src="https://img.gkbcdn.com/p/2022-08-11/NITECORE-BR35-Bicycle-Light-1800-Lumen-513542-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>9538.50</h5>
+     </div>
+     <div>
+        <img src="https://img.gkbcdn.com/p/2022-08-08/Dog-Poop-Bags-with-Hands-Free-Clip-Blue-512929-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>821.53</h5>
+     </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-06/Redragon-K626P-KBS-Ashe-Pro-Wireless-RGB-Mechanical-Keyboard-Black-512836-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>4522.13</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/ARCADE-BOX-128GB-Retro-Game-Console-with-2-Wireless-Gamepads-513795-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>7400.37</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-06/Redragon-GS570-Darknets-RGB-Bluetooth-Sound-Bar-Black-512834-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>4028.72</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-06/Redragon-GS580-Calliope-RGB-Desktop-PC-Speakers-Black-512837-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>2466.24</h5>
+    </div>
 
-    document.querySelector("form").addEventListener("register");
-    function userData (){
-      let nameData = document.querySelector("#name").value;
-      console.log(nameData);
-    }
-    </script>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-12/Household-600W-Automatic-Turkish-Coffee-Boiler-Blue-and-Black-514022-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>2959.66</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/LaserPecker-2-Bluetooth-Dongle-for-PC-Version---Mac---Computer-513820-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>4110.95</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/LaserPecker-2---LaserPecker-3-Batch-Engraving-Button-Black-513819-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>3288.60</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/LaserPecker-2-Cutting-Plate-Golden-513818-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>1314.95</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/LaserPecker-2-Third-Axis-Carry-Case-Grey-513816-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>5755.66</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/Sopend-E04A-Powercube-Power-Strip-Socket-EU-Plug-513790-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>2137.30</h5>
+    </div>
+     <div> <img src="https://img.gkbcdn.com/p/2022-08-11/Sopend-E02A-Cordless-Power-Strip-Socket-EU-Plug-513788-0._w280_p1_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, sint!.</p>
+        <h5>1479.42</h5>
+    </div>
+    </div>
 </body>
 </html>
